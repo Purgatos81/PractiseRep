@@ -1,5 +1,19 @@
+header {
+    background: #fff;
+    min-height: 100px;
+}
+
+body {
+    background-color: lightgray;
+}
+
 main {
     background-image: url('../media/Test.jpg');
+    background-repeat: no-repeat;
+}
+
+form {
+    max-width: fit-content;
 }
 
 .form__input {
@@ -10,10 +24,71 @@ nav {
     display: none;
 }
 
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 #hamburger-menu {
+    float: right;
     display: none;
 }
 
 #hamburger-menu:checked ~ nav {
     display: block;
+}
+
+.current {color: rgb(163, 70, 70);}
+
+.logo {max-width: 100px;}
+
+.hamburger-label {
+    float: right;
+    display: block;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+@media(min-width: 600px) {
+    body {
+        background: orange;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    nav {
+        display: inline-block;
+    }
+
+    .hamburger-label {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding: 19% 40px;
+    }
 }
