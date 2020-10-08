@@ -5,3 +5,15 @@ main {
 .form__input {
     display: block;
 }
+
+nav {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
