@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    background-color: lightgray;
+    background-image: url('../media/Test.jpg');
     display:  inline-block; 
     margin: 10px auto;
 }
@@ -26,6 +26,12 @@ form {
 
 .info-details {
     background: lightblue;
+    display: block;
+}
+
+.content-wrap {
+    text-align: center;
+    padding: 0 100px 0;
 }
 
 nav {
