@@ -8,16 +8,24 @@ body {
 }
 
 main {
-    background-image: url('../media/Test.jpg');
-    background-repeat: no-repeat;
+    background-color: lightgray;
+    display:  inline-block; 
+    margin: 10px auto;
 }
 
 form {
     max-width: fit-content;
+    margin: 0 auto;
+    background: brown;
 }
 
 .form__input {
     display: block;
+
+}
+
+.info-details {
+    background: lightblue;
 }
 
 nav {
@@ -61,6 +69,13 @@ nav a:hover {
     display: block;
     padding: 10px;
     font-size: 1.5em;
+}
+
+h1 {
+    background-color: peru;
+    border: 10px solid black;
+    padding: 10px;
+    margin: 10px;
 }
 
 @media(min-width: 600px) {
